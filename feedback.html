@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="gb2312">
+		<title>反馈</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<style>
+			table{
+				border-collapse: collapse;
+			}
+			body{
+				background: url(imgs/hd2.jpg);
+				font-family: "微软雅黑";
+			}
+		</style>
+	</head>
+ 	<body>
+	<form action="iframe/submit.html">
+		<br>
+		<h2 align="center" style="margin: auto;" >反馈信息</h2>
+		<br>
+		<frame>
+		<table width="500" border="1" align="center" cellpadding="5" cellspacing="0" style="color: white;background-color:black;opacity:0.6">
+			<tr>
+				<td width="100" height="20" align="center">称呼方式</td>
+				<td width="400" height="20" align="left">
+					<input placeholder="请输入您的称呼" minlength="1" required type="text" name="boke" size="48">
+				</td>
+			</tr>
+			<tr>
+				<td width="100" height="20" align="center">联系方式</td>
+				<td width="400" height="20" align="left">
+					<input placeholder="请输入您的联系方式" minlength="1" required type="text" name="boke" size="48">
+				</td>
+			</tr>
+			<tr>
+				<td width="100" height="20" align="center">反馈信息</td>
+				<td width="400" height="20" align="left">
+					<textarea placeholder="请输入信息" name="talk" cols="50" rows="10" required></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td width="100" height="20" align="center">质量评价</td>
+				<td width="400" height="20" align="left">
+					<input type="radio" name="zl" value="g" checked />高
+					<input type="radio" name="zl" value="sg" />稍高
+					<input type="radio" name="zl" value="sz" />适中
+				</td>
+			</tr>
+			
+			<tr>
+				<td width="100" height="20" align="center">喜欢类型</td>
+				<td width="400" height="20" align="left">
+					<input type="checkbox" name="concern" value="无" checked/>动漫
+					<input type="checkbox" name="concern" value="中" />壁纸
+					<input type="checkbox" name="concern" value="买" />音乐
+				</td>
+			</tr>
+			<tr>
+				<td width="100" height="20" align="center">使用情况</td>
+				<td width="400" height="20" align="left">
+					<select name="质量评价">
+						<option value="满意">满意</option>
+						<option value="一般" selected>一般</option>
+						<option value="不满意">不满意</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+			    <td width="100" height="20" align="center"></td>
+				<td height="20" colspan="2">
+				<input type="submit" name="register" value="提交"  />
+
+				<input type="reset" name="reset" value="重置" onclick="MsgBox()" />
+
+				<script language="javascript">
+
+				function MsgBox()
+					{
+						alert("重置成功"); 
+					}
+				</script>
+
+				</td>
+			</tr>
+		</table>
+	</form>
+	</body>
+</html>
